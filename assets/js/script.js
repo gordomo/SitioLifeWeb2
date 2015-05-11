@@ -182,8 +182,8 @@ function mailchimpResponse(resp) {
     $('.form-horizontal').on('submit', function(event){
     event.preventDefault();
 
-    $this = $(this);
-
+    //$this = $(this);
+    
     var data = {
       first_name: $('#first_name').val(),
       last_name: $('#last_name').val(),
@@ -196,8 +196,31 @@ function mailchimpResponse(resp) {
       type: "POST",
       url: "email.php",
       data: data,
-      success: function(msg){
-	     $('.contact-success').fadeIn().delay(3000).fadeOut();
+      success: function(msg)
+      {
+        switch (msg)
+        {
+            case 'ok':
+                $('.contact-success').fadeIn().delay(3000).fadeOut();
+                break
+            case 'error_correo_invalido':
+                $('.contact-error').html("el correo ingresado no es valido")
+                $('.contact-error').fadeIn().delay(3000).fadeOut();
+                break
+            case 'falta_algun_campo':
+                $('.contact-error').html("falta completar un campo")
+                $('.contact-error').fadeIn().delay(3000).fadeOut();
+                break
+            case 'ko':
+                $('.contact-error').html("mensaje no enviado - intente mas tarde")
+                $('.contact-error').fadeIn().delay(3000).fadeOut();
+                break                    
+        }
+               
+          
+      },
+      error: function(msg){
+          $('.contact-error').fadeIn().delay(3000).fadeOut();
       }
     });
   });
