@@ -2,11 +2,14 @@
 include_once 'conf/conf.php';
 
     if($_REQUEST['first_name'] == '' || $_REQUEST['last_name'] == '' || $_REQUEST['email'] == '' || $_REQUEST['message'] == ''):
-        return "error";
+        echo "falta_algun_campo";
     endif;
 		
-    if (filter_var($_REQUEST['email'], FILTER_VALIDATE_EMAIL)):
-    // receiver email address
+    if (!filter_var($_REQUEST['email'], FILTER_VALIDATE_EMAIL))
+    {
+        echo "error_correo_invalido";
+    }
+       
     $to = 'contacto@lifeweb.com';
 			
     // prepare header
@@ -32,12 +35,10 @@ include_once 'conf/conf.php';
             mysqli_close($con);
         }
     
-        return "success";
+        echo "success";
     }
-    return "error";
-    else:
-        return "error";
-    endif;
-
-
+    
+    echo "ko";
+    
+   
 
