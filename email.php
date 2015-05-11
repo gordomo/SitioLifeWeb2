@@ -3,11 +3,13 @@ include_once 'conf/conf.php';
 
     if($_REQUEST['first_name'] == '' || $_REQUEST['last_name'] == '' || $_REQUEST['email'] == '' || $_REQUEST['message'] == ''):
         echo "falta_algun_campo";
+        return;
     endif;
 		
     if (!filter_var($_REQUEST['email'], FILTER_VALIDATE_EMAIL))
     {
         echo "error_correo_invalido";
+        return;
     }
        
     $to = 'contacto@lifeweb.com';
@@ -36,9 +38,10 @@ include_once 'conf/conf.php';
         }
     
         echo "success";
+        return;
     }
     
     echo "ko";
-    
+    return;
    
 
