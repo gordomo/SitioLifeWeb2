@@ -90,10 +90,10 @@ ul, li {
   position: relative;
   border-bottom: 1px solid #e1e1e1;
   padding: 0 30px 10px;
-  color: #0aabe1;
+  color: #63B135;
 }
 .title h2:after {
-  background: none repeat scroll 0 0 #0aabe1;
+  background: none repeat scroll 0 0 #63B135;
   bottom: -1px;
   content: "";
   height: 1px;
@@ -127,10 +127,15 @@ ul, li {
 }
 .trans-bg {
   position: relative;
-  background: rgba(0, 167, 221, 0.70);
+  background: rgba(47, 50, 44, 0.69);
   padding: 120px 0;
 }
 
+.trans-bg-index {
+  position: relative;
+  background: rgba(202, 206, 207, 0.16);
+  padding: 120px 0;
+}
 ::-moz-selection { background: #A9D0F5; color: #5F5A5A }
      ::selection { background: #A9D0F5; color: #5F5A5A } 
 
@@ -392,7 +397,7 @@ header ul > li  {
 header .navbar-default .navbar-nav > .current > a, 
 header .navbar-default .navbar-nav > .current > a:hover,
 header .navbar-default .navbar-nav > .current > a:focus {
-    background-color: #76A942;
+    background-color: #63B135;
     color: #FEFEFE;
 }
 
@@ -413,7 +418,7 @@ header .nav > li > a {
 }
 
 header .navbar-default .navbar-nav > li > a {
-  color: #00a7dd;
+  color: #63B135;
 }
 header .navbar-default .navbar-nav > li > a:hover {
   color: #017298;
@@ -426,7 +431,7 @@ header .navbar-default .navbar-nav > .active > a:focus {
 }
 header .navbar-default .navbar-nav > li > a:hover, 
 header .navbar-default .navbar-nav > li > a:focus {
-  color: #00a7dd;
+  color: #B4C7A0;
   border:none;
 }
 
@@ -529,11 +534,11 @@ header .app li {
   position: relative;
 }
 .banner {
-  background: url(../images/slider/slide-1.jpg) no-repeat fixed;
+  background: url(../images/slider/bg1.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  /* background-size: cover; */
 }
 section.banner-carousel {
   padding-top: 0px;
@@ -638,7 +643,7 @@ section.banner-carousel {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  background: #0aabe1;
+  background: #77a942;
   border-radius: 2px;
   -webkit-transition: .3s ease;
      -moz-transition: .3s ease;
@@ -647,7 +652,7 @@ section.banner-carousel {
           transition: .3s ease;
 }
 .download-block .btn-download:hover {
-  background: #ff7f66;
+  background: #66FFB3;
 }
 .banner-carousel .app,
 .banner .app {
@@ -678,7 +683,7 @@ section.banner-carousel {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
-  color: #fff;
+  color: #63B135;
   min-height: 40px;
   line-height: 40px;
   margin-bottom: 0;
@@ -742,7 +747,7 @@ h3 {
 */
 
 .feature {
-  background: url(../images/feature_bg.jpg) no-repeat fixed;
+  background: url(../images/slider/bg_datacenter.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
