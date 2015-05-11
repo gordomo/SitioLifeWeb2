@@ -130,11 +130,14 @@ ul, li {
   background: rgba(47, 50, 44, 0.69);
   padding: 120px 0;
 }
-
+.video .trans-bg-index {
+  padding: 0;
+}
 .trans-bg-index {
   position: relative;
   background: rgba(202, 206, 207, 0.16);
-  padding: 120px 0;
+  padding: 170px ;
+  
 }
 ::-moz-selection { background: #A9D0F5; color: #5F5A5A }
      ::selection { background: #A9D0F5; color: #5F5A5A } 
@@ -530,15 +533,18 @@ header .app li {
 .banner-carousel .trans-bg {
   padding: 0 0px 120px;
 }
+.banner-carousel .trans-bg-index {
+  padding: 0 0px 120px;
+}
 .banner .container-fluid {
   position: relative;
 }
 .banner {
   background: url(../images/slider/bg1.jpg) no-repeat fixed;
-  -webkit-background-size: cover;
+  -webkit-background-size: cover; 
   -moz-background-size: cover;
   -o-background-size: cover;
-  /* background-size: cover; */
+  background-size: cover; 
 }
 section.banner-carousel {
   padding-top: 0px;
@@ -546,7 +552,7 @@ section.banner-carousel {
 .banner-carousel h2,
 .banner h2 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .banner-carousel h3,
 .banner h3 {
