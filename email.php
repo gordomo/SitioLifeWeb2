@@ -29,7 +29,7 @@ include_once 'conf/conf.php';
     
     if($mail)
     {
-        $con = conf::getConection("m2000364_pruebas");
+        $con = conf::getConection("m2000364_mail");
         if($con)
         {
             mysqli_query($con,"INSERT INTO email (mail, nombre, apellido) "
