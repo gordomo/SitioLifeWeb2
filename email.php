@@ -37,7 +37,7 @@ include_once 'conf/conf.php';
             mysqli_close($con);
         }
     
-        echo "success";
+        echo "ok";
         return;
     }
     
