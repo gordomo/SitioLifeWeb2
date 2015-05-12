@@ -790,7 +790,7 @@ h3 {
   -ms-transition: all ease-in .4s;
 }
 .feature-list-left .fa, .feature-list-right .fa {
-  font-size: 23px;
+  font-size: 30px;
   line-height: 56px;  
 }
 .feature-list-right .feature-detail {
