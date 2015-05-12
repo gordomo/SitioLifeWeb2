@@ -1301,7 +1301,7 @@ section.video {
 */
 
 .subscription {
-  background: url(../images/subscription_bg.jpg) no-repeat fixed;
+  background: url(../images/community_background.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1525,7 +1525,7 @@ section.contact > .container {
 */
 
 #footer {
-  background: url(../images/footer_bg.jpg) no-repeat fixed;
+  background: url(../images/social_back.png) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
