@@ -540,7 +540,7 @@ header .app li {
   position: relative;
 }
 .banner {
-  background: url(../images/slider/bg1.jpg) no-repeat fixed;
+  background: url(../images/slider/bg1-1.jpg) no-repeat fixed;
   -webkit-background-size: cover; 
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1301,7 +1301,7 @@ section.video {
 */
 
 .subscription {
-  background: url(../images/slider/newsletter.jpg) no-repeat fixed;
+  background: url(../images/slider/newsletter-1.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
