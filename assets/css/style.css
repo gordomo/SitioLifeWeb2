@@ -128,7 +128,7 @@ ul, li {
 .trans-bg {
   position: relative;
   background: rgba(47, 50, 44, 0.69);
-  padding: 120px 0;
+  padding: 50px 0;
 }
 .video .trans-bg-index {
   padding: 0;
@@ -709,7 +709,7 @@ section.banner-carousel {
 */
 .intro {
   overflow: hidden;
-  padding: 120px 0;
+  padding: 70px 0;
 }
 h2 {
   font-weight: 800;  
@@ -831,9 +831,12 @@ h3 {
 */
 
 section.description {
-  padding-top: 120px;
-  padding-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-image: url(../images/bg-qs.jpg);
 }
+
+section#description {}
 .description-list li {
   font-size: 20px;
   margin-bottom: 16px;
