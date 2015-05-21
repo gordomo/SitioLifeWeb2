@@ -128,7 +128,7 @@ ul, li {
 .trans-bg {
   position: relative;
   background: rgba(47, 50, 44, 0.69);
-  padding: 50px 0;
+  padding: 120px 0;
 }
 .video .trans-bg-index {
   padding: 0;
@@ -136,7 +136,7 @@ ul, li {
 .trans-bg-index {
   position: relative;
   background: rgba(202, 206, 207, 0.16);
-  padding: 170px ;
+  padding: 120px 0;
   
 }
 ::-moz-selection { background: #A9D0F5; color: #5F5A5A }
@@ -709,7 +709,7 @@ section.banner-carousel {
 */
 .intro {
   overflow: hidden;
-  padding: 70px 0;
+  padding: 120px 0;
 }
 h2 {
   font-weight: 800;  
@@ -813,7 +813,7 @@ h3 {
   color: #fff;
 }
 .feature p {
-  font-size: 15px;
+  font-size: 14px;
   color: #fff;
 } 
 .feature-list-left li:hover .feature-icon, .feature-list-right li:hover .feature-icon {
@@ -831,12 +831,11 @@ h3 {
 */
 
 section.description {
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom:30px;
   background-image: url(../images/bg-qs.jpg);
 }
 
-section#description {}
 .description-list li {
   font-size: 20px;
   margin-bottom: 16px;
