@@ -2,11 +2,11 @@
 include_once 'conf/constantes.php';
 class conf
 {
-    var $usr = "root";
-    var $pass = "021415";
-    
     public static function getConection($db = 'general')
     {
+        $usr = "root";
+        $pass = "021415";
+    
         if($_SERVER["HTTP_HOST"] != "localhost")
         {
             $usr = "m2000364_mail";
@@ -18,7 +18,7 @@ class conf
         if (mysqli_connect_errno())
         {
             //TODO guardar log del error
-            //echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            echo "Failed to connect to MySQL: " . mysqli_connect_error();
             
             return false;
         }

@@ -162,7 +162,51 @@ $('.play').magnificPopup({
     
 // --------------Newsletter-----------------------
 
-$(".newsletter-signup").ajaxChimp({
+$(".newsletter-signup").on('submit', function(event){
+    event.preventDefault();
+    
+    var data =  {
+                    email: $('#email').val(),
+                    action: "newsletter"
+                };
+    $.ajax({
+      type: "POST",
+      url: "email.php",
+      data: data,
+      success: function(msg)
+      {
+        switch (msg)
+        {
+            case 'ok':
+                $('.newsletter-success').html("Exito! te has registrado correctamente")
+                $('.newsletter-success').fadeIn().delay(3000).fadeOut();
+                break
+            case 'correo_duplicado':
+                $('.newsletter-error').html("El correo ya se encuentra en nuestra base de datos")
+                $('.newsletter-error').fadeIn().delay(3000).fadeOut();
+                break    
+            case 'error_correo_invalido':
+                $('.newsletter-error').html("el correo ingresado no es valido")
+                $('.newsletter-error').fadeIn().delay(3000).fadeOut();
+                break
+            case 'falta_algun_campo':
+                $('.newsletter-error').html("falta completar un campo")
+                $('.newsletter-error').fadeIn().delay(3000).fadeOut();
+                break
+            case 'ko':
+                $('.newsletter-error').html("mensaje no enviado - intente mas tarde")
+                $('.newsletter-error').fadeIn().delay(3000).fadeOut();
+                break                    
+        }
+               
+          
+      },
+      error: function(msg){
+          $('.contact-error').fadeIn().delay(3000).fadeOut();
+      }});
+});
+
+/*$(".newsletter-signup").ajaxChimp({
     callback: mailchimpResponse,
     url: "http://codepassenger.us10.list-manage.com/subscribe/post?u=6b2e008d85f125cf2eb2b40e9&id=6083876991" // Replace your mailchimp post url inside double quote "".  
 });
@@ -175,7 +219,7 @@ function mailchimpResponse(resp) {
     } else if(resp.result === 'error') {
         $('.newsletter-error').html(resp.msg).fadeIn().delay(3000).fadeOut();
     }  
-};
+};*/
 
   // --------------Contact Form Ajax request-----------------------
 
@@ -189,7 +233,8 @@ function mailchimpResponse(resp) {
       last_name: $('#last_name').val(),
       email: $('#email').val(),
       subject: $('#subject').val(),
-      message: $('#message').val()
+      message: $('#message').val(),
+      action: "contact"
     };
 
     $.ajax({
