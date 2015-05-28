@@ -202,6 +202,7 @@
   }
  section.feature {
       background: url(../images/slider/bg_datacenter-1.jpg) no-repeat fixed;
+      background-attachment: fixed;
       padding: 0;
 
   }
