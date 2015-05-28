@@ -192,7 +192,9 @@
       padding: 0;
   }
 
-
+  section.feature {
+  background-position: 10% 0px !important;
+}
 
   .trans-bg {
     padding: 50px 0;
