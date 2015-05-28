@@ -760,6 +760,7 @@ h3 {
   background-size: cover;
   background-position: 0 0;
   overflow: hidden;
+  background-attachment: fixed;
 }
 .feature-list-left li {
   text-align: right;
