@@ -194,6 +194,13 @@
 
   section.feature {
   background-position: 10% 0px !important;
+  }
+
+ section.subscription {
+  background-position: 10% 0px !important;
+}
+ footer {
+  background-position: 10% 0px !important;
 }
 
   .trans-bg {
