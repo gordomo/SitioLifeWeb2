@@ -131,12 +131,23 @@
   .subscription .form-control::-webkit-input-placeholder {
     font-size: 10px;
   }
+ section.feature {
+      background: url(../images/slider/bg_datacenter-1.jpg) no-repeat fixed;
+      padding: 0;
+
+  }
+  section.feature .trans-bg {
+  position: relative;
+  background: rgba(47, 50, 44, 0.69);
+  padding: 10px;
+}
+
 }
 
 @media screen and (max-width: 480px) {
   header {
     height: auto;
-    padding: 0;
+    padding: 5px;
   }
   header h1{
    margin: 10px 0;
@@ -189,6 +200,17 @@
       background: url(../images/slider/bg1-1-s.jpg) no-repeat fixed;
       padding: 0;
   }
+ section.feature {
+      background: url(../images/slider/bg_datacenter-1.jpg) no-repeat fixed;
+      padding: 0;
+
+  }
+  section.feature .trans-bg {
+  position: relative;
+  background: rgba(47, 50, 44, 0.69);
+  padding: 10px;
+}
+
   .trans-bg {
     padding: 50px 0;
   }
