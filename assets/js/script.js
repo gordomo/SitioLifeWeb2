@@ -166,7 +166,7 @@ $(".newsletter-signup").on('submit', function(event){
     event.preventDefault();
     
     var data =  {
-                    email: $('#email').val(),
+                    email: $('#email_news').val(),
                     action: "newsletter"
                 };
     $.ajax({

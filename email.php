@@ -60,9 +60,12 @@ switch ($_REQUEST['action'])
                 echo "error_correo_invalido";
                 break;
             }
-
+	    
+	    $correo = $_REQUEST['email'];
             $con = conf::getConection("m2000364_mail");
-            $correo = $_REQUEST['email'];
+            
+            $to = 'newsletter@lifeweb.com.ar';
+            $header = "From: ". $correo ."\r\n";
             
             $query = "INSERT INTO newsletter VALUES (null, '$correo')";
             //die(var_dump($con));
@@ -72,6 +75,7 @@ switch ($_REQUEST['action'])
                 if($objMySqli = mysqli_query($con, $query))
                 {
                     echo "ok";
+                    $mail = mail( $to, "Suscripcion a newletter" , "Nueva suscripcion", $header );
                 }
                 else
                 {
