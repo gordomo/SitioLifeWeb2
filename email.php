@@ -61,7 +61,7 @@ switch ($_REQUEST['action'])
                 break;
             }
 
-            $con = conf::getConection("mail");
+            $con = conf::getConection("m2000364_mail");
             $correo = $_REQUEST['email'];
             
             $query = "INSERT INTO newsletter VALUES (null, '$correo')";
