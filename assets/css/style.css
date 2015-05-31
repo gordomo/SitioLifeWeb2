@@ -153,6 +153,19 @@ section.solid-bg, #footer.solid-bg {
   height: auto;
 }
 
+.mfp-popup-link{
+    position:relative;
+    top:-300px;
+    text-align:center;
+}
+.mfp-popup-link a{
+    color:#fff;
+    font-size: 20px;
+    background-color: #63b135;
+    padding: 12px 15px;
+    border-radius: 3px;
+}
+
 /*
 ========================================================================
 # - 1.1 - Heading styles
@@ -374,7 +387,7 @@ header .navbar-default {
   border-color: transparent;
 }
 header .navbar-default .navbar-toggle {
-  border-color: #00a7dd;
+  border-color: #77A942;
   border: 0;
   border-radius: 2px;
   margin: 0;
@@ -388,7 +401,7 @@ header .navbar-default .navbar-toggle:focus {
   background: transparent;
 }
 header .navbar-default .navbar-toggle .icon-bar {
-  background: #00a7dd;
+  background: #77A942;
 }
 header .navbar {
   border-radius: 0;
@@ -429,7 +442,7 @@ header .navbar-default .navbar-nav > li > a:hover {
 header .navbar-default .navbar-nav > .active > a, 
 header .navbar-default .navbar-nav > .active > a:hover, 
 header .navbar-default .navbar-nav > .active > a:focus {
-  background-color: #00a7dd;
+  background-color: #77A942;
   color: #fefefe;
 }
 header .navbar-default .navbar-nav > li > a:hover, 
@@ -1222,7 +1235,7 @@ section.video {
 }
 .downlaod .btn:hover {
   background: #fff;
-  color: #00a7dd;
+  color: #77A942;
   z-index: 1;
 }
 .downlaod .btn:after {

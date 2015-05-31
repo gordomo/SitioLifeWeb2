@@ -535,7 +535,7 @@ MagnificPopup.prototype = {
 	 */
 	appendContent: function(newContent, type) {
 		mfp.content = newContent;
-		
+                
 		if(newContent) {
 			if(mfp.st.showCloseBtn && mfp.st.closeBtnInside &&
 				mfp.currTemplate[type] === true) {
@@ -546,6 +546,25 @@ MagnificPopup.prototype = {
 			} else {
 				mfp.content = newContent;
 			}
+                        
+                        if(mfp.content.find('.mfp-popup-link').length) {
+                            mfp.content.find('.mfp-popup-link').empty();
+                        }
+                        if(mfp.currItem.src == './assets/images/screenshot1.jpg'){
+                            mfp.content.append("<div class='mfp-popup-link'><a href='http://www.garciahelder.com' target='_blank'>Acceder al Sitio</a></div>");
+                        }
+                        if(mfp.currItem.src == './assets/images/screenshot2.jpg'){
+                            mfp.content.append("<div class='mfp-popup-link'><a href='http://www.complejoalkalu.com' target='_blank'>Acceder al Sitio</a></div>");
+                        }
+                        if(mfp.currItem.src == './assets/images/screenshot3.jpg'){
+                            mfp.content.append("<div class='mfp-popup-link'><a href='http://www.acinoxidable.com' target='_blank'>Acceder al Sitio</a></div>");
+                        }
+                        if(mfp.currItem.src == './assets/images/screenshot4.jpg'){
+                            mfp.content.append("<div class='mfp-popup-link'><a href='http://www.plasticfraft.com.ar' target='_blank'>Acceder al Sitio</a></div>");
+                        }
+                        if(mfp.currItem.src == './assets/images/screenshot5.jpg'){
+                            mfp.content.append("<div class='mfp-popup-link'><a href='http://www.ottuweb.com' target='_blank'>Acceder al Sitio</a></div>");
+                        }
 		} else {
 			mfp.content = '';
 		}
