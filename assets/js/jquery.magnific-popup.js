@@ -560,7 +560,7 @@ MagnificPopup.prototype = {
                             mfp.content.append("<div class='mfp-popup-link'><a href='http://www.acinoxidable.com' target='_blank'>Acceder al Sitio</a></div>");
                         }
                         if(mfp.currItem.src == './assets/images/screenshot4.jpg'){
-                            mfp.content.append("<div class='mfp-popup-link'><a href='http://www.plasticfraft.com.ar' target='_blank'>Acceder al Sitio</a></div>");
+                            mfp.content.append("<div class='mfp-popup-link'><a href='http://www.plasticraft.com.ar' target='_blank'>Acceder al Sitio</a></div>");
                         }
                         if(mfp.currItem.src == './assets/images/screenshot5.jpg'){
                             mfp.content.append("<div class='mfp-popup-link'><a href='http://www.ottuweb.com' target='_blank'>Acceder al Sitio</a></div>");
