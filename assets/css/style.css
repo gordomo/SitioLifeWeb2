@@ -52,8 +52,8 @@ Index
 
 html, 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-size: 16px; */
   color: #798289;
   line-height: 1.6;  
   -webkit-font-smoothing: antialiased;
@@ -1164,54 +1164,109 @@ section.video {
 .price-block {
   margin-bottom: 20px;
 }
-.price-header {
-  background: #63B135;
-  padding:20px;
-  text-align: center;
-  height: 180px;
-  overflow: hidden;
+@media screen and (min-width: 1200px) {
+    .price-header {
+      background: #63B135;
+      padding:20px;
+      text-align: center;
+      height: 180px;
+      overflow: hidden;
+    }
+    
+    .price-header h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .price-header .fa {
+    font-size: 50px;
+    color: #63B135;
+    line-height: 1.8;
+    /* width: 155px; */
+    /* height:155px; */
+    /* border-radius: 50%; */
+    color: #fff;
+  }
+  .price-plan {
+    text-align: center;
+    font-size: 20px;
+    background: #fff;
+  }
+  .price-plan ul li {
+    padding: 20px;
+  }
+  
+  .price {
+    font-family: 'Dosis', sans-serif;
+    color: #63B135;
+    font-size: 20px; 
+  }
+  .month {
+    font-family: 'Dosis', sans-serif;
+    color: #b5b5b5;
+    font-size: 18px;
+  }
 }
+@media screen and (max-width: 1199px) {
+    .price-header {
+      background: #63B135;
+      padding:17px;
+      text-align: center;
+      height: 150px;
+      overflow: hidden;
+    }
+    
+    .price-header h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .price-header .fa {
+    font-size: 30px;
+    color: #63B135;
+    line-height: 1.8;
+    /* width: 155px; */
+    /* height:155px; */
+    /* border-radius: 50%; */
+    color: #fff;
+  }
+  .price-plan {
+    text-align: center;
+    font-size: 15px;
+    background: #fff;
+  }
+  .price-plan ul li {
+    padding: 15px;
+  }
+  
+  .price {
+    font-family: 'Dosis', sans-serif;
+    color: #63B135;
+    font-size: 15px; 
+  }
+  .month {
+    font-family: 'Dosis', sans-serif;
+    color: #b5b5b5;
+    font-size: 13px;
+  }
+}
+
+
 .price-block:hover .price-header,
 .price-block.active .price-header {
-  background: #048bb9;
+  background: #FFB135;
 }
-.price-header h3 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 12px;
-  color: #fff;
-  text-transform: capitalize;
-}
-.price-header .fa {
-  font-size: 50px;
-  color: #63B135;
-  line-height: 1.8;
-  width: 155px;
-  height:155px;
-  border-radius: 50%;
-  color: #fff;
-}
-.price-plan {
-  text-align: center;
-  font-size: 20px;
-  background: #fff;
-}
-.price-plan ul li {
-  padding: 20px;
-}
+
 .price-plan ul li:nth-child(2n) {
   background: #f7f7f7;
 }
-.price {
-  font-family: 'Dosis', sans-serif;
-  color: #63B135;
-  font-size: 20px; 
-}
-.month {
-  font-family: 'Dosis', sans-serif;
-  color: #b5b5b5;
-}
+
 
 /*
 ========================================================================
@@ -1635,7 +1690,7 @@ section.contact > .container {
 	text-align: center;
 	line-height: 60px;
 	margin: 0 20px 20px;
-	background:url(../images/ui.totop.png) no-repeat left top;
+	background: url(../images/ui.totop.png) no-repeat left top;
 	width: 51px;
 	height: 51px;
 	transition: .3s;
