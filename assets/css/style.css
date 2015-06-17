@@ -1202,7 +1202,8 @@ section.video {
   .price {
     font-family: 'Dosis', sans-serif;
     color: #63B135;
-    font-size: 20px; 
+    font-size: 24px; 
+    font-weight: bold;
   }
   .month {
     font-family: 'Dosis', sans-serif;
